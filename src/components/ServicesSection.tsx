@@ -14,8 +14,8 @@ const services = [
   {
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="6" y="12" width="20" height="14" rx="1" />
-        <rect x="10" y="6" width="12" height="14" rx="1" />
+        <rect x="6" y="12" width="20" height="14" rx="2" />
+        <rect x="10" y="6" width="12" height="14" rx="2" />
       </svg>
     ),
     title: "SaaS Products",
@@ -51,7 +51,7 @@ const ServicesSection = () => {
           {services.map((s) => (
             <div
               key={s.title}
-              className="card-glow bg-card border border-border/50 p-8 flex flex-col"
+              className="card-glow bg-card border border-border/60 p-8 flex flex-col rounded-lg"
             >
               <div className="text-primary mb-6">{s.icon}</div>
               <h3 className="text-xl font-heading font-semibold text-foreground mb-3">{s.title}</h3>
