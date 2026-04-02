@@ -7,24 +7,24 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background grid pattern */}
       <div className="absolute inset-0 grid-pattern" />
 
-      {/* Animated orb */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px] animate-orb-float pointer-events-none" />
+      {/* Animated gradient orbs */}
+      <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] rounded-full bg-primary/10 blur-[120px] animate-orb-float pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/3 w-[400px] h-[400px] rounded-full bg-accent/10 blur-[100px] animate-orb-float pointer-events-none" style={{ animationDelay: "-7s" }} />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <h1
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-heading font-bold leading-[1.05] tracking-[-0.02em] text-foreground opacity-0 animate-fade-up"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-heading font-bold leading-[1.08] tracking-[-0.02em] text-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "200ms" }}
         >
           Built to scale,
           <br />
-          Made to convert.
+          <span className="gradient-text">Made to convert.</span>
         </h1>
 
         <p
-          className="mt-6 max-w-2xl mx-auto text-lg text-muted-foreground leading-relaxed opacity-0 animate-fade-up"
+          className="mt-6 max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground leading-relaxed opacity-0 animate-fade-up"
           style={{ animationDelay: "400ms" }}
         >
           Revora is a digital agency specializing in web development, SaaS products, and

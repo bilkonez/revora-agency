@@ -58,14 +58,14 @@ const PricingSection = () => {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative flex flex-col p-8 border ${
+              className={`relative flex flex-col p-8 border rounded-lg ${
                 plan.popular
-                  ? "border-primary/60 bg-primary/5"
-                  : "border-border/50 bg-card"
+                  ? "border-primary/50 bg-primary/5 shadow-lg shadow-primary/10"
+                  : "border-border/60 bg-card"
               }`}
             >
               {plan.popular && (
-                <span className="absolute top-0 right-0 bg-primary text-primary-foreground text-[10px] tracking-[0.1em] uppercase font-semibold px-3 py-1">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] tracking-[0.1em] uppercase font-semibold px-4 py-1 rounded-full">
                   Most Popular
                 </span>
               )}
@@ -74,7 +74,7 @@ const PricingSection = () => {
               <ul className="mt-8 space-y-3 flex-1">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-sm text-muted-foreground">
-                    <span className="mt-1.5 w-1.5 h-1.5 bg-primary shrink-0" />
+                    <span className="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
                     {f}
                   </li>
                 ))}
