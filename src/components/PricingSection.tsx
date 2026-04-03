@@ -6,7 +6,7 @@ const plans = [
     name: "Starter",
     price: "€499",
     features: [
-      "Landing page or simple website",
+      "AI-optimized landing page or website",
       "Up to 5 sections",
       "Mobile responsive",
       "Contact form integration",
