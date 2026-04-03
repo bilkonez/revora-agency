@@ -1,9 +1,9 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const features = [
-  { title: "Fast delivery", desc: "MVPs and landing pages in days, not months" },
-  { title: "Revenue-first design", desc: "Every decision is made with conversion in mind" },
-  { title: "Full-stack execution", desc: "Design, development, and strategy under one roof" },
+  { title: "AI-accelerated delivery", desc: "MVPs and landing pages in days, not months — powered by AI workflows" },
+  { title: "Revenue-first AI design", desc: "Every decision is made with conversion in mind, backed by AI insights" },
+  { title: "Full-stack AI execution", desc: "Design, development, AI integration, and strategy under one roof" },
   { title: "Transparent pricing", desc: "No surprises, no hidden costs" },
 ];
 
