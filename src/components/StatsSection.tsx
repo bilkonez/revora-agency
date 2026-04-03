@@ -28,13 +28,13 @@ function useCountUp(target: number, inView: boolean, duration = 2000) {
   return count;
 }
 
-const StatItem = ({ value, suffix, label, inView }: { value: number; suffix: string; label: string; inView: boolean }) => {
+const StatItem = ({ value, suffix, label, inView, prefix }: { value: number; suffix: string; label: string; inView: boolean; prefix?: string }) => {
   const count = useCountUp(value, inView);
 
   return (
     <div className="text-center">
       <div className="text-5xl md:text-6xl font-heading font-bold gradient-text">
-        {count}{suffix}
+        {prefix}{count}{suffix}
       </div>
       <p className="mt-2 text-sm text-muted-foreground tracking-wide">{label}</p>
     </div>
