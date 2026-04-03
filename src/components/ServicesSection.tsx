@@ -7,9 +7,9 @@ const services = [
         <path d="M8 8l-4 8 4 8M24 8l4 8-4 8M18 6l-4 20" />
       </svg>
     ),
-    title: "Web Development",
+    title: "AI Web Development",
     description:
-      "From landing pages to full-scale web applications. We build fast, conversion-optimized websites that work.",
+      "From landing pages to full-scale web applications. We build fast, AI-optimized websites designed to convert.",
   },
   {
     icon: (
