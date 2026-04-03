@@ -58,7 +58,7 @@ const StatsSection = () => {
 
   return (
     <section className="py-20 px-6">
-      <div ref={ref} className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6">
+      <div ref={ref} className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10 md:gap-6">
         {stats.map((s) => (
           <StatItem key={s.label} {...s} inView={inView} />
         ))}
