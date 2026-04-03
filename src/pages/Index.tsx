@@ -18,6 +18,7 @@ const Index = () => (
     <WhyRevoraSection />
     <ProcessSection />
     <PricingSection />
+    <TestimonialsSection />
     <ContactSection />
     <Footer />
   </>
