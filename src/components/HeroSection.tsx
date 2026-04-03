@@ -47,7 +47,7 @@ const HeroSection = () => {
           className="mt-12 text-xs tracking-[0.15em] uppercase text-muted-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "800ms" }}
         >
-          Web Development · SaaS Products · Digital Monetization
+          AI Web Development · AI SaaS Products · AI-Driven Monetization
         </p>
       </div>
     </section>

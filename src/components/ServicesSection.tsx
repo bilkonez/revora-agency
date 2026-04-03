@@ -44,7 +44,7 @@ const ServicesSection = () => {
       <div ref={ref} className="max-w-7xl mx-auto">
         <p className="section-label mb-4">WHAT WE DO</p>
         <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-12">
-          Three ways we grow your business
+          Three AI-powered ways we grow your business
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">

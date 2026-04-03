@@ -2,8 +2,8 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const steps = [
   { num: "01", title: "Discovery", desc: "We learn your goals, audience, and competition." },
-  { num: "02", title: "Strategy", desc: "We map out the architecture, stack, and monetization approach." },
-  { num: "03", title: "Build", desc: "Rapid development with weekly updates and full transparency." },
+  { num: "02", title: "AI Strategy", desc: "We map out the architecture, AI stack, and monetization approach." },
+  { num: "03", title: "Build with AI", desc: "AI-accelerated development with weekly updates and full transparency." },
   { num: "04", title: "Launch & Scale", desc: "We deploy, monitor, and optimize for growth." },
 ];
 

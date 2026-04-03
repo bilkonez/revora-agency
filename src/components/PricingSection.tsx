@@ -32,9 +32,9 @@ const plans = [
     name: "Premium",
     price: "€1,999+",
     features: [
-      "SaaS MVP or complex web app",
-      "Custom functionality",
-      "Monetization integration",
+      "AI-powered SaaS MVP or web app",
+      "Custom AI functionality",
+      "AI monetization integration",
       "Ongoing support available",
       "Fully custom scope",
     ],

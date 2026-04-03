@@ -18,7 +18,7 @@ const WhyRevoraSection = () => {
             We don't just build — we build for <span className="gradient-text">results.</span>
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Most agencies deliver a website and walk away. Revora builds digital systems designed to
+            Most agencies deliver a website and walk away. Revora builds AI-powered digital systems designed to
             generate leads, retain users, and scale revenue from day one.
           </p>
         </div>

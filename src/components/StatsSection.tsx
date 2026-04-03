@@ -3,8 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const stats = [
   { value: 120, suffix: "+", label: "Projects Delivered" },
   { value: 98, suffix: "%", label: "Client Satisfaction" },
-  { value: 3, suffix: "x", label: "Avg. Revenue Growth" },
-  { value: 48, suffix: "h", label: "Avg. Delivery Time" },
+  { value: 1, suffix: "M+", label: "Revenue Generated", prefix: "$" },
 ];
 
 function useCountUp(target: number, inView: boolean, duration = 2000) {
