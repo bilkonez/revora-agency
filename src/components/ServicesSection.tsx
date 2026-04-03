@@ -18,9 +18,9 @@ const services = [
         <rect x="10" y="6" width="12" height="14" rx="2" />
       </svg>
     ),
-    title: "SaaS Products",
+    title: "AI SaaS Products",
     description:
-      "We design and develop software products from concept to launch. Scalable, modern, and built for growth.",
+      "We design and develop AI-powered software products from concept to launch. Scalable, intelligent, and built for growth.",
   },
   {
     icon: (
