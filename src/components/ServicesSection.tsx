@@ -7,9 +7,9 @@ const services = [
         <path d="M8 8l-4 8 4 8M24 8l4 8-4 8M18 6l-4 20" />
       </svg>
     ),
-    title: "Web Development",
+    title: "AI Web Development",
     description:
-      "From landing pages to full-scale web applications. We build fast, conversion-optimized websites that work.",
+      "From landing pages to full-scale web applications. We build fast, AI-optimized websites designed to convert.",
   },
   {
     icon: (
@@ -18,9 +18,9 @@ const services = [
         <rect x="10" y="6" width="12" height="14" rx="2" />
       </svg>
     ),
-    title: "SaaS Products",
+    title: "AI SaaS Products",
     description:
-      "We design and develop software products from concept to launch. Scalable, modern, and built for growth.",
+      "We design and develop AI-powered software products from concept to launch. Scalable, intelligent, and built for growth.",
   },
   {
     icon: (
@@ -30,9 +30,9 @@ const services = [
         <path d="M22 12l4-4" />
       </svg>
     ),
-    title: "Digital Monetization",
+    title: "AI Monetization",
     description:
-      "Affiliate systems, lead generation platforms, and traffic monetization strategies that turn audiences into revenue.",
+      "AI-driven affiliate systems, lead generation platforms, and smart monetization strategies that turn audiences into revenue.",
   },
 ];
 
@@ -44,7 +44,7 @@ const ServicesSection = () => {
       <div ref={ref} className="max-w-7xl mx-auto">
         <p className="section-label mb-4">WHAT WE DO</p>
         <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-12">
-          Three ways we grow your business
+          Three AI-powered ways we grow your business
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">

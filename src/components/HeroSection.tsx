@@ -27,8 +27,8 @@ const HeroSection = () => {
           className="mt-6 max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground leading-relaxed opacity-0 animate-fade-up"
           style={{ animationDelay: "400ms" }}
         >
-          Revora is a digital agency specializing in web development, SaaS products, and
-          monetization systems that generate real revenue.
+          Revora is an AI-powered digital agency specializing in web development, SaaS products, and
+          AI-driven monetization systems that generate real revenue.
         </p>
 
         <div
@@ -47,7 +47,7 @@ const HeroSection = () => {
           className="mt-12 text-xs tracking-[0.15em] uppercase text-muted-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "800ms" }}
         >
-          Web Development · SaaS Products · Digital Monetization
+          AI Web Development · AI SaaS Products · AI-Driven Monetization
         </p>
       </div>
     </section>

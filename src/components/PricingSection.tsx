@@ -6,7 +6,7 @@ const plans = [
     name: "Starter",
     price: "€499",
     features: [
-      "Landing page or simple website",
+      "AI-optimized landing page or website",
       "Up to 5 sections",
       "Mobile responsive",
       "Contact form integration",
@@ -21,7 +21,7 @@ const plans = [
     features: [
       "Full website up to 10 pages",
       "CMS integration",
-      "SEO foundation",
+      "AI-enhanced SEO foundation",
       "Analytics setup",
       "3 revision rounds",
     ],
@@ -32,9 +32,9 @@ const plans = [
     name: "Premium",
     price: "€1,999+",
     features: [
-      "SaaS MVP or complex web app",
-      "Custom functionality",
-      "Monetization integration",
+      "AI-powered SaaS MVP or web app",
+      "Custom AI functionality",
+      "AI monetization integration",
       "Ongoing support available",
       "Fully custom scope",
     ],
