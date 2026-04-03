@@ -21,7 +21,7 @@ const plans = [
     features: [
       "Full website up to 10 pages",
       "CMS integration",
-      "SEO foundation",
+      "AI-enhanced SEO foundation",
       "Analytics setup",
       "3 revision rounds",
     ],
