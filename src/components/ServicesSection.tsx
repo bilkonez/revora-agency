@@ -30,9 +30,9 @@ const services = [
         <path d="M22 12l4-4" />
       </svg>
     ),
-    title: "Digital Monetization",
+    title: "AI Monetization",
     description:
-      "Affiliate systems, lead generation platforms, and traffic monetization strategies that turn audiences into revenue.",
+      "AI-driven affiliate systems, lead generation platforms, and smart monetization strategies that turn audiences into revenue.",
   },
 ];
 
