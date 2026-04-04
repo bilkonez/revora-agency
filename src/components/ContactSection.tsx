@@ -1,14 +1,41 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
   const ref = useScrollReveal();
+  const { toast } = useToast();
   const [form, setForm] = useState({ name: "", email: "", type: "Web Development", message: "" });
+  const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thanks! We'll be in touch within 24 hours.");
+    setSending(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: form,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Message sent!",
+        description: "Thanks! We'll be in touch within 24 hours.",
+      });
+      setForm({ name: "", email: "", type: "Web Development", message: "" });
+    } catch (err) {
+      console.error("Failed to send:", err);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again or email us directly at hello@revora.agency",
+        variant: "destructive",
+      });
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -56,8 +83,8 @@ const ContactSection = () => {
             onChange={(e) => setForm({ ...form, message: e.target.value })}
             className="w-full px-4 py-3 bg-card border border-border/60 rounded-lg text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-all resize-none"
           />
-          <Button variant="hero" size="lg" type="submit" className="w-full">
-            Send Message
+          <Button variant="hero" size="lg" type="submit" className="w-full" disabled={sending}>
+            {sending ? "Sending..." : "Send Message"}
           </Button>
         </form>
 
