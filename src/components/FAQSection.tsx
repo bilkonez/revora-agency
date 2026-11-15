@@ -48,7 +48,7 @@ const FAQSection = () => {
         <div className="text-center mb-14">
           <span className="section-label">FAQ</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-bold text-foreground">
-            Frequently Asked <span className="gradient-text">Questions</span>
+            Questions from <span className="gradient-text">operators</span>
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
             What transport companies usually ask us.

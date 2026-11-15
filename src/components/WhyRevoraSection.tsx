@@ -11,13 +11,13 @@ const WhyRevoraSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="on-dark py-24 px-6 bg-asphalt text-white">
       <div ref={ref} className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-start">
         <div>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-6">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold tracking-[-0.01em] text-white mb-6">
             Built by transport people, <span className="gradient-text">for transport.</span>
           </h2>
-          <p className="text-muted-foreground leading-relaxed">
+          <p className="text-white/70 leading-relaxed text-lg">
             Most software for transport is built far from the road. Revora was born inside the industry, so every
             tool we make starts with a problem a real operator, dispatcher or driver deals with every day.
           </p>
@@ -26,10 +26,10 @@ const WhyRevoraSection = () => {
         <div className="space-y-6">
           {features.map((f) => (
             <div key={f.title} className="flex items-start gap-4">
-              <span className="mt-1.5 w-2 h-2 rounded-full bg-primary shrink-0" />
+              <span className="mt-2 w-4 h-[3px] rounded-full bg-primary shrink-0" />
               <div>
-                <h4 className="font-heading font-semibold text-foreground">{f.title}</h4>
-                <p className="text-sm text-muted-foreground mt-1">{f.desc}</p>
+                <h4 className="font-heading text-lg font-semibold text-white">{f.title}</h4>
+                <p className="text-sm text-white/60 mt-1 leading-relaxed">{f.desc}</p>
               </div>
             </div>
           ))}

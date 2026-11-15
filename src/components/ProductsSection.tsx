@@ -1,9 +1,19 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { LayoutDashboard, Bus, Package, Wrench } from "lucide-react";
+import { Wrench } from "lucide-react";
+import { FlotivaMark, CoachboardMark, NexaMark } from "@/components/ProductLogos";
+
+const TmsMark = ({ size = 40 }: { size?: number }) => (
+  <span
+    className="inline-flex items-center justify-center rounded-[10px] bg-secondary text-foreground"
+    style={{ width: size, height: size }}
+  >
+    <Wrench className="w-5 h-5" strokeWidth={1.75} />
+  </span>
+);
 
 const products = [
   {
-    icon: LayoutDashboard,
+    logo: FlotivaMark,
     name: "Flotiva",
     badge: "Early access",
     tagline: "One platform for every fleet",
@@ -13,7 +23,7 @@ const products = [
     featured: true,
   },
   {
-    icon: Bus,
+    logo: CoachboardMark,
     name: "Coachboard",
     tagline: "Charter coach exchange",
     description:
@@ -22,7 +32,7 @@ const products = [
     featured: false,
   },
   {
-    icon: Package,
+    logo: NexaMark,
     name: "Nexa Express",
     tagline: "All couriers, one pickup",
     description:
@@ -31,7 +41,7 @@ const products = [
     featured: false,
   },
   {
-    icon: Wrench,
+    logo: TmsMark,
     name: "Custom TMS",
     tagline: "Built to measure",
     description:
@@ -58,36 +68,36 @@ const ProductsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-6">
           {products.map((p) => {
-            const Icon = p.icon;
+            const Logo = p.logo;
             return (
               <div
                 key={p.name}
                 className={`card-glow relative flex flex-col p-8 border rounded-lg ${
-                  p.featured ? "border-primary/50 bg-primary/5" : "border-border/60 bg-card"
+                  p.featured ? "border-[#0e3a4f]/40 bg-[#0e3a4f]/[0.04] ring-1 ring-[#0e3a4f]/10" : "border-border/70 bg-card"
                 }`}
               >
                 <div className="flex items-start justify-between gap-4 mb-6">
-                  <div className="text-primary">
-                    <Icon className="w-8 h-8" strokeWidth={1.5} />
+                  <div className="flex items-center gap-3">
+                    <Logo size={40} />
+                    <h3 className="text-2xl font-heading font-bold text-foreground">{p.name}</h3>
                   </div>
                   {p.badge && (
-                    <span className="bg-primary text-primary-foreground text-[10px] tracking-[0.1em] uppercase font-semibold px-3 py-1 rounded-full">
+                    <span className="bg-primary text-primary-foreground text-[10px] shrink-0 tracking-[0.1em] uppercase font-semibold px-3 py-1 rounded-full">
                       {p.badge}
                     </span>
                   )}
                 </div>
-                <h3 className="text-2xl font-heading font-semibold text-foreground">{p.name}</h3>
-                <p className="text-sm text-primary font-medium mt-1 mb-4">{p.tagline}</p>
+                <p className="font-condensed text-base font-semibold tracking-[0.06em] uppercase text-accent mb-3">{p.tagline}</p>
                 <p className="text-muted-foreground text-sm leading-relaxed">{p.description}</p>
                 <ul className="mt-6 space-y-2 flex-1">
                   {p.points.map((pt) => (
                     <li key={pt} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                      <span className="mt-[7px] w-3 h-[3px] rounded-full bg-primary shrink-0" />
                       {pt}
                     </li>
                   ))}
                 </ul>
-                <a href="#contact" className="mt-6 text-sm text-primary font-medium hover:brightness-125 transition-all">
+                <a href="#contact" className="mt-6 text-sm text-foreground font-semibold underline decoration-primary decoration-2 underline-offset-4 hover:decoration-4 transition-all">
                   {p.featured ? "Request early access →" : "Learn more →"}
                 </a>
               </div>

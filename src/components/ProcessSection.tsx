@@ -11,18 +11,26 @@ const ProcessSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="process" className="py-24 px-6 bg-muted/30">
+    <section id="process" className="py-24 px-6">
       <div ref={ref} className="max-w-7xl mx-auto">
         <p className="section-label mb-4">HOW WE WORK</p>
         <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-12">
-          Simple process. Serious results.
+          From first call to the road
         </h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Dashed road connecting the stops */}
+          <div
+            className="hidden lg:block absolute top-6 left-6 right-6 h-[3px]"
+            style={{ background: "repeating-linear-gradient(90deg, hsl(var(--foreground) / .25) 0 14px, transparent 14px 24px)" }}
+            aria-hidden="true"
+          />
           {steps.map((s) => (
-            <div key={s.num} className="p-6 border border-border/50 rounded-lg bg-card/50">
-              <span className="text-4xl md:text-5xl font-heading font-bold gradient-text">{s.num}</span>
-              <h3 className="text-base md:text-lg font-heading font-semibold text-foreground mt-4 mb-2">{s.title}</h3>
+            <div key={s.num} className="relative">
+              <span className="relative z-10 inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary text-primary-foreground font-condensed text-xl font-bold ring-8 ring-background">
+                {s.num}
+              </span>
+              <h3 className="text-lg font-heading font-semibold text-foreground mt-5 mb-2">{s.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
             </div>
           ))}

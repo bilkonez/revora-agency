@@ -39,7 +39,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 bg-muted/40">
+    <section id="contact" className="py-24 px-6 bg-secondary/60 border-t border-border/70">
       <div ref={ref} className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-4">
           Let's talk about your fleet

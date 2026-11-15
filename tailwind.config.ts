@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['"Space Grotesk"', 'sans-serif'],
+        heading: ['Barlow', 'sans-serif'],
+        condensed: ['"Barlow Condensed"', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
       },
       colors: {
