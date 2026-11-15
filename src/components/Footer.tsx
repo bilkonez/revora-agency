@@ -3,10 +3,10 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-muted-foreground">
       <div className="text-center md:text-left">
         <span className="font-heading font-bold text-foreground">Revora</span>
-        <span className="ml-3">Built to scale, made to convert.</span>
+        <span className="ml-3">AI software for everything on wheels.</span>
       </div>
       <div className="flex flex-wrap justify-center gap-6">
-        {["Services", "About", "Pricing", "Contact"].map((l) => (
+        {["Products", "Services", "About", "Contact"].map((l) => (
           <a
             key={l}
             href={`#${l.toLowerCase()}`}
@@ -16,7 +16,7 @@ const Footer = () => (
           </a>
         ))}
       </div>
-      <span className="text-center">&copy; 2025 Revora. All rights reserved.</span>
+      <span className="text-center">&copy; {new Date().getFullYear()} Revora. All rights reserved.</span>
     </div>
   </footer>
 );

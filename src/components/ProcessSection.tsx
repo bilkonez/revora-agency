@@ -1,10 +1,10 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const steps = [
-  { num: "01", title: "Discovery", desc: "We learn your goals, audience, and competition." },
-  { num: "02", title: "AI Strategy", desc: "We map out the architecture, AI stack, and monetization approach." },
-  { num: "03", title: "Build with AI", desc: "AI-accelerated development with weekly updates and full transparency." },
-  { num: "04", title: "Launch & Scale", desc: "We deploy, monitor, and optimize for growth." },
+  { num: "01", title: "Listen", desc: "We look at how your fleet, office and drivers work today." },
+  { num: "02", title: "Fit", desc: "We match you with a product, or plan what needs to be built to measure." },
+  { num: "03", title: "Set up", desc: "We move your vehicles, drivers and documents in and train your team." },
+  { num: "04", title: "Support", desc: "We stay with you, and your feedback shapes the next version." },
 ];
 
 const ProcessSection = () => {

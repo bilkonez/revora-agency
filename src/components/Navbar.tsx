@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
+  { label: "PRODUCTS", href: "#products" },
   { label: "SERVICES", href: "#services" },
   { label: "ABOUT", href: "#about" },
-  { label: "WORK", href: "#process" },
-  { label: "PRICING", href: "#pricing" },
+  { label: "HOW WE WORK", href: "#process" },
   { label: "CONTACT", href: "#contact" },
 ];
 
@@ -47,7 +47,7 @@ const Navbar = () => {
             </button>
           ))}
           <Button variant="accent-outline" size="sm" onClick={() => handleClick("#contact")}>
-            Get a Quote
+            Talk to Us
           </Button>
         </div>
 
@@ -79,7 +79,7 @@ const Navbar = () => {
             </button>
           ))}
           <Button variant="accent-outline" size="sm" className="mt-2 w-full" onClick={() => handleClick("#contact")}>
-            Get a Quote
+            Talk to Us
           </Button>
         </div>
       )}

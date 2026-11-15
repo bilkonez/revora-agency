@@ -7,9 +7,9 @@ const services = [
         <path d="M8 8l-4 8 4 8M24 8l4 8-4 8M18 6l-4 20" />
       </svg>
     ),
-    title: "AI Web Development",
+    title: "Transport SaaS",
     description:
-      "From landing pages to full-scale web applications. We build fast, AI-optimized websites designed to convert.",
+      "Ready-made products like Flotiva, Coachboard and Nexa Express. Sign up, add your fleet and start working the same week.",
   },
   {
     icon: (
@@ -18,9 +18,9 @@ const services = [
         <rect x="10" y="6" width="12" height="14" rx="2" />
       </svg>
     ),
-    title: "AI SaaS Products",
+    title: "Custom Software",
     description:
-      "We design and develop AI-powered software products from concept to launch. Scalable, intelligent, and built for growth.",
+      "For larger operators we build their own systems: dispatch, maintenance, finance and contracts, shaped around how they work.",
   },
   {
     icon: (
@@ -30,9 +30,9 @@ const services = [
         <path d="M22 12l4-4" />
       </svg>
     ),
-    title: "AI Monetization",
+    title: "AI Integration",
     description:
-      "AI-driven affiliate systems, lead generation platforms, and smart monetization strategies that turn audiences into revenue.",
+      "We add AI to the tools you already use: reading invoices and receipts, automating paperwork and connecting GPS and tachograph data.",
   },
 ];
 
@@ -44,7 +44,7 @@ const ServicesSection = () => {
       <div ref={ref} className="max-w-7xl mx-auto">
         <p className="section-label mb-4">WHAT WE DO</p>
         <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-12">
-          Three AI-powered ways we grow your business
+          Three ways we work with transport companies
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">

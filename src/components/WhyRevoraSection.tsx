@@ -1,10 +1,10 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const features = [
-  { title: "AI-accelerated delivery", desc: "MVPs and landing pages in days, not months — powered by AI workflows" },
-  { title: "Revenue-first AI design", desc: "Every decision is made with conversion in mind, backed by AI insights" },
-  { title: "Full-stack AI execution", desc: "Design, development, AI integration, and strategy under one roof" },
-  { title: "Transparent pricing", desc: "No surprises, no hidden costs" },
+  { title: "We come from transport", desc: "We know dispatch, driver hours, vehicle deadlines and paperwork first-hand, not from a brochure" },
+  { title: "AI that does the boring work", desc: "Reading documents, watching deadlines and calculating costs, so your team can run the fleet" },
+  { title: "Local rules built in", desc: "Driving-time rules, tachographs and the realities of cross-border transport in the Balkans and the EU" },
+  { title: "Products first, custom when needed", desc: "Start with a ready product, and we build to measure only where you really need it" },
 ];
 
 const WhyRevoraSection = () => {
@@ -15,11 +15,11 @@ const WhyRevoraSection = () => {
       <div ref={ref} className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-start">
         <div>
           <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-6">
-            We don't just build — we build for <span className="gradient-text">results.</span>
+            Built by transport people, <span className="gradient-text">for transport.</span>
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Most agencies deliver a website and walk away. Revora builds AI-powered digital systems designed to
-            generate leads, retain users, and scale revenue from day one.
+            Most software for transport is built far from the road. Revora was born inside the industry, so every
+            tool we make starts with a problem a real operator, dispatcher or driver deals with every day.
           </p>
         </div>
 

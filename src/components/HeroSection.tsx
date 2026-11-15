@@ -1,16 +1,16 @@
 import { Button } from "@/components/ui/button";
 
 const floatingIcons = [
-  { emoji: "🤖", className: "top-[15%] left-[8%] animate-float-slow text-2xl", delay: "0s" },
-  { emoji: "💬", className: "top-[25%] right-[10%] animate-float-medium text-xl", delay: "-2s" },
-  { emoji: "⚡", className: "bottom-[30%] left-[6%] animate-float-reverse text-2xl", delay: "-1s" },
-  { emoji: "📊", className: "top-[18%] right-[22%] animate-float-slow text-lg", delay: "-4s" },
-  { emoji: "🧠", className: "bottom-[22%] right-[7%] animate-float-medium text-2xl", delay: "-3s" },
-  { emoji: "🚀", className: "top-[40%] left-[4%] animate-float-reverse text-xl", delay: "-5s" },
-  { emoji: "💡", className: "bottom-[18%] left-[15%] animate-float-slow text-lg", delay: "-2.5s" },
-  { emoji: "⚙️", className: "top-[12%] left-[25%] animate-float-medium text-lg", delay: "-6s" },
-  { emoji: "📱", className: "bottom-[35%] right-[18%] animate-float-reverse text-xl", delay: "-1.5s" },
-  { emoji: "✨", className: "top-[55%] right-[5%] animate-float-slow text-lg", delay: "-4.5s" },
+  { emoji: "🚌", className: "top-[15%] left-[8%] animate-float-slow text-2xl", delay: "0s" },
+  { emoji: "🚚", className: "top-[25%] right-[10%] animate-float-medium text-2xl", delay: "-2s" },
+  { emoji: "📦", className: "bottom-[30%] left-[6%] animate-float-reverse text-xl", delay: "-1s" },
+  { emoji: "🗺️", className: "top-[18%] right-[22%] animate-float-slow text-lg", delay: "-4s" },
+  { emoji: "🚐", className: "bottom-[22%] right-[7%] animate-float-medium text-2xl", delay: "-3s" },
+  { emoji: "📄", className: "top-[40%] left-[4%] animate-float-reverse text-lg", delay: "-5s" },
+  { emoji: "⛽", className: "bottom-[18%] left-[15%] animate-float-slow text-lg", delay: "-2.5s" },
+  { emoji: "📍", className: "top-[12%] left-[25%] animate-float-medium text-lg", delay: "-6s" },
+  { emoji: "🧠", className: "bottom-[35%] right-[18%] animate-float-reverse text-xl", delay: "-1.5s" },
+  { emoji: "⏱️", className: "top-[55%] right-[5%] animate-float-slow text-lg", delay: "-4.5s" },
 ];
 
 const HeroSection = () => {
@@ -66,28 +66,28 @@ const HeroSection = () => {
           className="text-4xl sm:text-5xl md:text-6xl lg:text-[76px] font-heading font-bold leading-[1.08] tracking-[-0.02em] text-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "200ms" }}
         >
-          Built to scale,
+          AI software for
           <br />
-          <span className="gradient-text">Made to convert.</span>
+          <span className="gradient-text">everything on wheels.</span>
         </h1>
 
         <p
           className="mt-6 max-w-2xl mx-auto text-base sm:text-lg text-muted-foreground leading-relaxed opacity-0 animate-fade-up"
           style={{ animationDelay: "400ms" }}
         >
-          Revora is an AI-powered digital agency specializing in web development, SaaS products, and
-          AI-driven monetization systems that generate real revenue.
+          Revora builds AI software for the transport sector: coach and bus operators, trucking
+          companies, couriers and every business that runs vehicles.
         </p>
 
         <div
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-up"
           style={{ animationDelay: "600ms" }}
         >
-          <Button variant="hero" size="lg" onClick={() => scrollTo("#contact")}>
-            Start a Project
+          <Button variant="hero" size="lg" onClick={() => scrollTo("#products")}>
+            Explore Our Products
           </Button>
-          <Button variant="hero-outline" size="lg" onClick={() => scrollTo("#services")}>
-            See Our Services
+          <Button variant="hero-outline" size="lg" onClick={() => scrollTo("#contact")}>
+            Talk to Us
           </Button>
         </div>
 
@@ -95,7 +95,7 @@ const HeroSection = () => {
           className="mt-12 text-xs tracking-[0.15em] uppercase text-muted-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "800ms" }}
         >
-          AI Web Development · AI SaaS Products · AI-Driven Monetization
+          Coaches · Trucks · Couriers · Vans
         </p>
       </div>
     </section>

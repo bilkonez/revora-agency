@@ -8,34 +8,34 @@ import {
 
 const faqs = [
   {
-    question: "What AI technologies do you use in your projects?",
+    question: "Who are your products for?",
     answer:
-      "We leverage cutting-edge AI tools including OpenAI GPT models, custom machine learning pipelines, natural language processing, and computer vision — all tailored to your specific business needs and integrated seamlessly into your product.",
+      "Coach and bus operators, trucking companies, couriers and any business that runs vehicles, from a single van to large fleets.",
   },
   {
-    question: "How long does a typical AI-powered project take?",
+    question: "What does the AI actually do?",
     answer:
-      "Most projects are delivered within 2–6 weeks depending on complexity. A simple AI landing page or chatbot takes ~2 weeks, while a full AI SaaS platform with custom models can take 4–6 weeks. We provide a detailed timeline during our free consultation.",
+      "It reads receipts, invoices and transport documents and turns them into data, warns you before vehicle and driver deadlines expire, checks driving and rest times, and shows the profit of each trip.",
   },
   {
-    question: "Do I need technical knowledge to work with Revora?",
+    question: "Can you connect to our GPS devices and tachographs?",
     answer:
-      "Not at all. We handle everything from AI strategy and design to development and deployment. You just share your vision and business goals — our team takes care of the rest and keeps you updated at every step.",
+      "That is the plan for Flotiva: we connect to the GPS and tachograph systems you already use through their APIs, instead of asking you to install new hardware. Tell us what you use and we will check it.",
   },
   {
-    question: "What does AI-driven monetization mean?",
+    question: "Is Flotiva available now?",
     answer:
-      "AI-driven monetization uses intelligent systems to optimize your revenue streams — from dynamic pricing and personalized upsells to automated lead scoring and conversion optimization. We build custom AI engines that actively increase your bottom line.",
+      "Flotiva is in early access. Leave your details in the form below and we will invite you as soon as your segment is ready.",
   },
   {
-    question: "Can you integrate AI into my existing product?",
+    question: "Do you build custom software?",
     answer:
-      "Absolutely. We specialize in retrofitting AI capabilities into existing platforms — whether it's adding an intelligent chatbot, automating workflows, or building recommendation engines. Our solutions integrate via APIs with minimal disruption.",
+      "Yes, for larger operators who need their own system. Whatever we build to measure, we try to bring back into our products, so it keeps improving.",
   },
   {
-    question: "What's included in the free consultation?",
+    question: "Do driving-time warnings replace our legal obligations?",
     answer:
-      "Our free consultation includes a full audit of your current digital presence, AI opportunity assessment, competitive analysis, and a custom roadmap with actionable recommendations. No commitment required — just valuable insights for your business.",
+      "No. Our tools help you stay on top of the rules, but the operator and the driver remain responsible for compliance.",
   },
 ];
 
@@ -51,7 +51,7 @@ const FAQSection = () => {
             Frequently Asked <span className="gradient-text">Questions</span>
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            Everything you need to know about our AI-powered services.
+            What transport companies usually ask us.
           </p>
         </div>
 
