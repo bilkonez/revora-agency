@@ -1,6 +1,12 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { CoachboardMark, NexaMark } from "@/components/ProductLogos";
-import { Lock } from "lucide-react";
+import { Wrench } from "lucide-react";
+
+const TmsMark = ({ size = 44 }: { size?: number }) => (
+  <span className="inline-flex items-center justify-center rounded-[10px] bg-asphalt text-primary" style={{ width: size, height: size }}>
+    <Wrench className="w-5 h-5" strokeWidth={1.75} />
+  </span>
+);
 
 const img = (name: string) => `${import.meta.env.BASE_URL}portfolio/${name}`;
 
@@ -26,6 +32,18 @@ const projects = [
     main: { src: img("nexa-home.webp"), alt: "Nexa Express home page with a parcel tracking timeline" },
     second: { src: img("nexa-posalji.webp"), alt: "Nexa Express order form, step one: sender details" },
     url: "nexa",
+  },
+  {
+    logo: TmsMark,
+    name: "Custom TMS",
+    kind: "Built for a coach operator · in daily use",
+    description:
+      "A full transport management system for one operator's office: dashboard with deadlines and cash, dispatch calendar, trips and travel orders, maintenance, fuel, quotes, invoices and contracts.",
+    highlights: ["Dispatch calendar for the whole fleet", "Quote → pro forma → invoice in one flow", "Alerts for registrations, inspections and driver cards"],
+    main: { src: img("tms-dashboard.webp"), alt: "TMS dashboard with today's trips, revenue, costs and deadline alerts" },
+    second: { src: img("tms-kalendar.webp"), alt: "TMS dispatch calendar with trips per day, vehicle and driver" },
+    note: "Shown with demo data. The client's real data stays private.",
+    url: "tms",
   },
 ];
 
@@ -75,6 +93,7 @@ const PortfolioSection = () => {
                       </li>
                     ))}
                   </ul>
+                  {"note" in p && p.note && <p className="mt-6 text-xs text-muted-foreground italic">{p.note}</p>}
                 </div>
 
                 <div className={`relative min-w-0 pb-10 sm:pb-16 ${flip ? "lg:order-1" : ""}`}>
@@ -88,26 +107,6 @@ const PortfolioSection = () => {
               </div>
             );
           })}
-
-          {/* Private client work */}
-          <div className="rounded-xl border border-dashed border-border bg-card/70 p-8 md:p-10 flex flex-col md:flex-row md:items-center gap-6">
-            <span className="w-12 h-12 rounded-xl bg-asphalt text-primary flex items-center justify-center shrink-0">
-              <Lock className="w-5 h-5" strokeWidth={1.75} />
-            </span>
-            <div className="flex-1">
-              <h3 className="text-xl font-heading font-bold text-foreground">Custom TMS for a coach operator</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed max-w-3xl">
-                Dispatch with a live map, maintenance, quotes, invoices, transport contracts and tours, in daily use
-                by the operator's office. This is a private client system, so we show it on a call.
-              </p>
-            </div>
-            <a
-              href="#contact"
-              className="text-sm font-semibold text-foreground underline decoration-primary decoration-2 underline-offset-4 whitespace-nowrap"
-            >
-              Ask for a demo →
-            </a>
-          </div>
         </div>
       </div>
     </section>
