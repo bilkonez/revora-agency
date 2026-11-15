@@ -4,6 +4,7 @@ import { RevoraLogo } from "@/components/ProductLogos";
 
 const navLinks = [
   { label: "PRODUCTS", href: "#products" },
+  { label: "OUR WORK", href: "#work" },
   { label: "SERVICES", href: "#services" },
   { label: "ABOUT", href: "#about" },
   { label: "HOW WE WORK", href: "#process" },

@@ -27,8 +27,8 @@ const products = [
     name: "Coachboard",
     tagline: "Charter coach exchange",
     description:
-      "Customers post a charter trip once and get offers from verified coach operators. Operators find new work without paying commission.",
-    points: ["Verified operators only", "Direct contact, no commission", "Built for European routes"],
+      "Organisers post a charter trip once and get offers from verified coach operators. Operators get new trip requests on their routes.",
+    points: ["Verified operators only", "Compare offers side by side", "Built for European routes"],
     featured: false,
   },
   {
