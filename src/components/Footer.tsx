@@ -8,7 +8,7 @@ const Footer = () => (
         <p className="mt-2">Software built around how your business works.</p>
       </div>
       <div className="flex flex-wrap justify-center gap-6">
-        {([["Services", "services"], ["Our work", "work"], ["Products", "products"], ["Contact", "contact"]] as const).map(([l, id]) => (
+        {([["Services", "services"], ["Our work", "work"], ["Contact", "contact"]] as const).map(([l, id]) => (
           <a
             key={l}
             href={`#${id}`}

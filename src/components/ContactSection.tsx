@@ -74,7 +74,6 @@ const ContactSection = () => {
             <option>Website</option>
             <option>AI or automation</option>
             <option>Online shop</option>
-            <option>Our products (Flotiva, Coachboard, Nexa)</option>
             <option>Other</option>
           </select>
           <textarea
