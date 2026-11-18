@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-white/55">
       <div className="text-center md:text-left">
         <RevoraLogo light />
-        <p className="mt-2">Software built around how your business works.</p>
+        <p className="mt-2">Digital solutions, development, web domains and hosting.</p>
       </div>
       <div className="flex flex-wrap justify-center gap-6">
         {([["Services", "services"], ["Our work", "work"], ["Contact", "contact"]] as const).map(([l, id]) => (

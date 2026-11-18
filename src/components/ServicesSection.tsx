@@ -4,9 +4,9 @@ import { LayoutDashboard, Globe, Sparkles, ShoppingCart, Plug, LifeBuoy } from "
 const services = [
   {
     icon: LayoutDashboard,
-    title: "Web apps & business systems",
+    title: "Software development",
     description:
-      "Internal tools built around how your team works: orders, scheduling, quotes and invoices, stock, records and dashboards. No more spreadsheets and paper.",
+      "Custom web apps and business systems built around how your team works: orders, scheduling, quotes and invoices, stock, records and dashboards.",
   },
   {
     icon: Globe,
@@ -34,9 +34,9 @@ const services = [
   },
   {
     icon: LifeBuoy,
-    title: "Hosting & support",
+    title: "Web domains & hosting",
     description:
-      "We host, maintain and improve what we build, on a simple monthly plan, so your software keeps working after launch.",
+      "We register your domain, set up hosting, business email and SSL, and keep everything updated, backed up and running on a simple monthly plan.",
   },
 ];
 
@@ -46,12 +46,12 @@ const ServicesSection = () => {
   return (
     <section id="services" className="py-24 px-6">
       <div ref={ref} className="max-w-7xl mx-auto">
-        <p className="section-label mb-4">WHAT WE DO</p>
+        <p className="section-label mb-4">DIGITAL SOLUTIONS</p>
         <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-4">
           If it can be built in software, we build it
         </h2>
         <p className="text-muted-foreground max-w-2xl mb-12">
-          From a single website to a full system that runs your company, for any industry.
+          Development, websites, AI, web domains and hosting: everything your business needs online, from one team.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

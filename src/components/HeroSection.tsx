@@ -37,7 +37,7 @@ const HeroSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-24 grid lg:grid-cols-[1.1fr_1fr] gap-14 items-center w-full">
         <div className="min-w-0">
           <p className="opacity-0 animate-fade-up inline-flex items-center gap-2 text-xs font-semibold tracking-[0.18em] uppercase text-white/60" style={{ animationDelay: "100ms" }}>
-            <span className="w-2 h-2 rounded-full bg-primary" /> Software development studio
+            <span className="w-2 h-2 rounded-full bg-primary" /> Digital solutions · Development · Hosting
           </p>
           <h1
             className="mt-5 text-4xl sm:text-5xl md:text-6xl lg:text-[68px] font-heading font-bold leading-[1.04] tracking-[-0.01em] opacity-0 animate-fade-up"
@@ -52,8 +52,9 @@ const HeroSection = () => {
             className="mt-6 max-w-xl text-base sm:text-lg text-white/70 leading-relaxed opacity-0 animate-fade-up"
             style={{ animationDelay: "400ms" }}
           >
-            Revora designs and builds web apps, business systems, websites and AI automations for companies
-            in any industry. You bring the problem, we deliver software your team actually uses.
+            Revora delivers digital solutions for companies in any industry: software development, web apps,
+            websites, AI automation, web domains and hosting. You bring the problem, we deliver software your
+            team actually uses.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-up" style={{ animationDelay: "600ms" }}>
@@ -98,7 +99,7 @@ const HeroSection = () => {
               })}
             </ul>
             <div className="px-4 sm:px-5 py-3 border-t border-white/10 flex flex-wrap gap-x-4 gap-y-1 items-center justify-between text-xs text-white/50">
-              <span>From first call to launch in weeks</span>
+              <span>Development, domains and hosting in one place</span>
               <span className="text-primary font-semibold">Hosting and support included</span>
             </div>
           </div>

@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "What kind of projects do you take on?",
     answer:
-      "Web apps, business systems, websites, online shops, integrations and AI automations, for companies in any industry. If you are not sure whether something can be built, ask us.",
+      "Software development, web apps, websites, online shops, integrations, AI automation, web domains and hosting, for companies in any industry. If you are not sure whether something can be built, ask us.",
   },
   {
     question: "How much does a project cost?",
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "What happens after launch?",
     answer:
-      "We can host and maintain the software on a monthly plan: updates, fixes, backups and small improvements. You are never left alone with it.",
+      "We take care of your web domain and hosting and maintain the software on a monthly plan: updates, fixes, backups and small improvements. You are never left alone with it.",
   },
   {
     question: "Can you work with the tools we already use?",

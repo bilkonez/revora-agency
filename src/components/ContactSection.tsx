@@ -74,6 +74,7 @@ const ContactSection = () => {
             <option>Website</option>
             <option>AI or automation</option>
             <option>Online shop</option>
+            <option>Web domain & hosting</option>
             <option>Other</option>
           </select>
           <textarea
