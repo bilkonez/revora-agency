@@ -5,13 +5,13 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-white/55">
       <div className="text-center md:text-left">
         <RevoraLogo light />
-        <p className="mt-2">AI software for everything on wheels.</p>
+        <p className="mt-2">Software built around how your business works.</p>
       </div>
       <div className="flex flex-wrap justify-center gap-6">
-        {["Products", "Services", "About", "Contact"].map((l) => (
+        {([["Services", "services"], ["Our work", "work"], ["Products", "products"], ["Contact", "contact"]] as const).map(([l, id]) => (
           <a
             key={l}
-            href={`#${l.toLowerCase()}`}
+            href={`#${id}`}
             className="hover:text-white transition-colors text-xs tracking-[0.1em] uppercase"
           >
             {l}

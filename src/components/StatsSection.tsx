@@ -1,21 +1,21 @@
-import { Bus, Truck, Package, Car } from "lucide-react";
+import { Truck, UtensilsCrossed, ShoppingBag, Users } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const segments = [
-  { icon: Bus, title: "Coaches & buses", desc: "Charter, school and line transport, tours and excursions" },
-  { icon: Truck, title: "Trucks", desc: "Domestic and international freight, FTL and LTL" },
-  { icon: Package, title: "Couriers", desc: "Parcel pickup and delivery, many stops a day" },
-  { icon: Car, title: "Vans & light fleets", desc: "Light cargo, service fleets and company vehicles" },
+  { icon: Truck, title: "Transport & logistics", desc: "Dispatch, fleet records, quotes, invoices and contracts" },
+  { icon: UtensilsCrossed, title: "Hospitality", desc: "Restaurants, cafés and hotels: orders, bookings and stock" },
+  { icon: ShoppingBag, title: "Retail & e-commerce", desc: "Online shops, product catalogues and order handling" },
+  { icon: Users, title: "Clubs & services", desc: "Sports clubs, associations, offices and service companies" },
 ];
 
-// Segments strip: who Revora builds for.
+// Industries strip: examples of who Revora builds for.
 const StatsSection = () => {
   const ref = useScrollReveal();
 
   return (
     <section className="px-6 py-16 border-b border-border/70">
       <div ref={ref} className="max-w-7xl mx-auto">
-        <p className="section-label mb-8">Built for</p>
+        <p className="section-label mb-8">Who we build for</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border/70 rounded-xl overflow-hidden border border-border/70">
           {segments.map((s) => {
             const Icon = s.icon;

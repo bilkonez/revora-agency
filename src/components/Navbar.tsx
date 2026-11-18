@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { RevoraLogo } from "@/components/ProductLogos";
 
 const navLinks = [
-  { label: "PRODUCTS", href: "#products" },
-  { label: "OUR WORK", href: "#work" },
   { label: "SERVICES", href: "#services" },
+  { label: "OUR WORK", href: "#work" },
+  { label: "PRODUCTS", href: "#products" },
   { label: "ABOUT", href: "#about" },
   { label: "HOW WE WORK", href: "#process" },
   { label: "CONTACT", href: "#contact" },
@@ -51,7 +51,7 @@ const Navbar = () => {
             </button>
           ))}
           <Button size="sm" className="bg-primary text-primary-foreground hover:brightness-105 font-semibold" onClick={() => handleClick("#contact")}>
-            Talk to Us
+            Start a Project
           </Button>
         </div>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
             </button>
           ))}
           <Button size="sm" className="mt-2 w-full bg-primary text-primary-foreground font-semibold" onClick={() => handleClick("#contact")}>
-            Talk to Us
+            Start a Project
           </Button>
         </div>
       )}

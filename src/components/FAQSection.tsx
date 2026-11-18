@@ -8,34 +8,34 @@ import {
 
 const faqs = [
   {
-    question: "Who are your products for?",
+    question: "What kind of projects do you take on?",
     answer:
-      "Coach and bus operators, trucking companies, couriers and any business that runs vehicles, from a single van to large fleets.",
+      "Web apps, business systems, websites, online shops, integrations and AI automations, for companies in any industry. If you are not sure whether something can be built, ask us.",
   },
   {
-    question: "What does the AI actually do?",
+    question: "How much does a project cost?",
     answer:
-      "It reads receipts, invoices and transport documents and turns them into data, warns you before vehicle and driver deadlines expire, checks driving and rest times, and shows the profit of each trip.",
+      "It depends on what you need. After a first call we send a written plan and a fixed price, so you know the cost before any work starts.",
   },
   {
-    question: "Can you connect to our GPS devices and tachographs?",
+    question: "How long does it take?",
     answer:
-      "That is the plan for Flotiva: we connect to the GPS and tachograph systems you already use through their APIs, instead of asking you to install new hardware. Tell us what you use and we will check it.",
+      "A website usually takes one to three weeks, a business app a few weeks to a couple of months. We show you working versions along the way, not only at the end.",
   },
   {
-    question: "Is Flotiva available now?",
+    question: "What happens after launch?",
     answer:
-      "Flotiva is in early access. Leave your details in the form below and we will invite you as soon as your segment is ready.",
+      "We can host and maintain the software on a monthly plan: updates, fixes, backups and small improvements. You are never left alone with it.",
   },
   {
-    question: "Do you build custom software?",
+    question: "Can you work with the tools we already use?",
     answer:
-      "Yes, for larger operators who need their own system. Whatever we build to measure, we try to bring back into our products, so it keeps improving.",
+      "Usually yes. We connect to existing systems through their APIs or exports, so you keep what works and we build only what is missing.",
   },
   {
-    question: "Do driving-time warnings replace our legal obligations?",
+    question: "Do you work with clients outside Bosnia and Herzegovina?",
     answer:
-      "No. Our tools help you stay on top of the rules, but the operator and the driver remain responsible for compliance.",
+      "Yes. We work remotely in English and Bosnian/Croatian/Serbian, with clients across the region and the EU.",
   },
 ];
 
@@ -48,10 +48,10 @@ const FAQSection = () => {
         <div className="text-center mb-14">
           <span className="section-label">FAQ</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-heading font-bold text-foreground">
-            Questions from <span className="gradient-text">operators</span>
+            Questions we <span className="gradient-text">often get</span>
           </h2>
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
-            What transport companies usually ask us.
+            What clients usually ask before starting a project.
           </p>
         </div>
 

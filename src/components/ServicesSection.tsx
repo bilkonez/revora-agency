@@ -1,38 +1,42 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { LayoutDashboard, Globe, Sparkles, ShoppingCart, Plug, LifeBuoy } from "lucide-react";
 
 const services = [
   {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M8 8l-4 8 4 8M24 8l4 8-4 8M18 6l-4 20" />
-      </svg>
-    ),
-    title: "Transport SaaS",
+    icon: LayoutDashboard,
+    title: "Web apps & business systems",
     description:
-      "Ready-made products like Flotiva, Coachboard and Nexa Express. Sign up, add your fleet and start working the same week.",
+      "Internal tools built around how your team works: orders, scheduling, quotes and invoices, stock, records and dashboards. No more spreadsheets and paper.",
   },
   {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <rect x="6" y="12" width="20" height="14" rx="2" />
-        <rect x="10" y="6" width="12" height="14" rx="2" />
-      </svg>
-    ),
-    title: "Custom Software",
+    icon: Globe,
+    title: "Websites",
     description:
-      "For larger operators we build their own systems: dispatch, maintenance, finance and contracts, shaped around how they work.",
+      "Fast, modern websites for companies, clubs and organisations, with content that updates itself where possible, such as results, offers or schedules.",
   },
   {
-    icon: (
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M4 28l7-10 5 6 5-8 7 12" />
-        <path d="M26 8l-4 1 1-4" />
-        <path d="M22 12l4-4" />
-      </svg>
-    ),
-    title: "AI Integration",
+    icon: Sparkles,
+    title: "AI & automation",
     description:
-      "We add AI to the tools you already use: reading invoices and receipts, automating paperwork and connecting GPS and tachograph data.",
+      "AI that does the repetitive work: reading invoices, receipts and bank statements, sorting email, drafting documents and keeping data in sync.",
+  },
+  {
+    icon: ShoppingCart,
+    title: "Online shops",
+    description:
+      "Webshops with product catalogues, order handling and delivery options, connected to your suppliers and stock where it makes sense.",
+  },
+  {
+    icon: Plug,
+    title: "Integrations",
+    description:
+      "We connect the tools you already use, so data moves between your website, apps, accounting and suppliers without copying by hand.",
+  },
+  {
+    icon: LifeBuoy,
+    title: "Hosting & support",
+    description:
+      "We host, maintain and improve what we build, on a simple monthly plan, so your software keeps working after launch.",
   },
 ];
 
@@ -43,24 +47,24 @@ const ServicesSection = () => {
     <section id="services" className="py-24 px-6">
       <div ref={ref} className="max-w-7xl mx-auto">
         <p className="section-label mb-4">WHAT WE DO</p>
-        <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-12">
-          Three ways we work with transport companies
+        <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-4">
+          If it can be built in software, we build it
         </h2>
+        <p className="text-muted-foreground max-w-2xl mb-12">
+          From a single website to a full system that runs your company, for any industry.
+        </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {services.map((s) => (
-            <div
-              key={s.title}
-              className="card-glow bg-card border border-border/70 p-8 flex flex-col rounded-xl"
-            >
-              <div className="text-accent mb-6">{s.icon}</div>
-              <h3 className="text-xl font-heading font-semibold text-foreground mb-3">{s.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed flex-1">{s.description}</p>
-              <a href="#contact" className="mt-6 text-sm text-foreground font-semibold underline decoration-primary decoration-2 underline-offset-4 hover:decoration-4 transition-all">
-                Learn more →
-              </a>
-            </div>
-          ))}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((s) => {
+            const Icon = s.icon;
+            return (
+              <div key={s.title} className="card-glow bg-card border border-border/70 p-8 flex flex-col rounded-xl">
+                <Icon className="w-8 h-8 text-accent mb-6" strokeWidth={1.5} />
+                <h3 className="text-xl font-heading font-semibold text-foreground mb-3">{s.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed flex-1">{s.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

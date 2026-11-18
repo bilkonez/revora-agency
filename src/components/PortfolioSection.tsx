@@ -1,6 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { CoachboardMark, NexaMark } from "@/components/ProductLogos";
-import { Wrench } from "lucide-react";
+import { Wrench, Trophy } from "lucide-react";
 
 const TmsMark = ({ size = 44 }: { size?: number }) => (
   <span className="inline-flex items-center justify-center rounded-[10px] bg-asphalt text-primary" style={{ width: size, height: size }}>
@@ -8,9 +8,38 @@ const TmsMark = ({ size = 44 }: { size?: number }) => (
   </span>
 );
 
+const KolinaMark = ({ size = 44 }: { size?: number }) => (
+  <span className="inline-flex items-center justify-center rounded-[10px] bg-[#0f6b3f] text-[#e7a929]" style={{ width: size, height: size }}>
+    <Trophy className="w-5 h-5" strokeWidth={1.75} />
+  </span>
+);
+
 const img = (name: string) => `${import.meta.env.BASE_URL}portfolio/${name}`;
 
 const projects = [
+  {
+    logo: TmsMark,
+    name: "Transport management system",
+    kind: "Business system · Coach operator · in daily use",
+    description:
+      "The system that runs a coach company's office every day: dashboard with deadlines and cash, dispatch calendar, trips and travel orders, maintenance, fuel, quotes, invoices and contracts.",
+    highlights: ["Dispatch calendar for the whole fleet", "Quote → pro forma → invoice in one flow", "Alerts for registrations, inspections and driver cards"],
+    main: { src: img("tms-dashboard.webp"), alt: "TMS dashboard with today's trips, revenue, costs and deadline alerts" },
+    second: { src: img("tms-kalendar.webp"), alt: "TMS dispatch calendar with trips per day, vehicle and driver" },
+    note: "Shown with demo data. The client's real data stays private.",
+    url: "tms",
+  },
+  {
+    logo: KolinaMark,
+    name: "NK Kolina",
+    kind: "Club website · Football",
+    description:
+      "Website for a local football club. League table, results, fixtures and top scorers update automatically from the official federation data, so the club never has to type in a score.",
+    highlights: ["Results and table synced automatically", "Every season since 2018 in one place", "Club history, stadium, kit and memberships"],
+    main: { src: img("kolina-home.webp"), alt: "NK Kolina website home page with the next match card" },
+    second: { src: img("kolina-results.webp"), alt: "NK Kolina league table, top scorers and match results" },
+    url: "kolina",
+  },
   {
     logo: CoachboardMark,
     name: "Coachboard",
@@ -33,18 +62,6 @@ const projects = [
     second: { src: img("nexa-posalji.webp"), alt: "Nexa Express order form, step one: sender details" },
     url: "nexa",
   },
-  {
-    logo: TmsMark,
-    name: "Custom TMS",
-    kind: "Built for a coach operator · in daily use",
-    description:
-      "A full transport management system for one operator's office: dashboard with deadlines and cash, dispatch calendar, trips and travel orders, maintenance, fuel, quotes, invoices and contracts.",
-    highlights: ["Dispatch calendar for the whole fleet", "Quote → pro forma → invoice in one flow", "Alerts for registrations, inspections and driver cards"],
-    main: { src: img("tms-dashboard.webp"), alt: "TMS dashboard with today's trips, revenue, costs and deadline alerts" },
-    second: { src: img("tms-kalendar.webp"), alt: "TMS dispatch calendar with trips per day, vehicle and driver" },
-    note: "Shown with demo data. The client's real data stays private.",
-    url: "tms",
-  },
 ];
 
 const BrowserFrame = ({ src, alt, small = false }: { src: string; alt: string; small?: boolean }) => (
@@ -66,9 +83,9 @@ const PortfolioSection = () => {
       <div ref={ref} className="max-w-7xl mx-auto">
         <p className="section-label mb-4">Our work</p>
         <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.01em] text-foreground mb-4">
-          Products already on the road
+          Projects in use today
         </h2>
-        <p className="text-muted-foreground max-w-2xl mb-16">Screens from our own apps, as they look today.</p>
+        <p className="text-muted-foreground max-w-2xl mb-16">Real screens from software we built, as it looks today.</p>
 
         <div className="space-y-24">
           {projects.map((p, i) => {

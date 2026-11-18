@@ -1,10 +1,10 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const features = [
-  { title: "We come from transport", desc: "We know dispatch, driver hours, vehicle deadlines and paperwork first-hand, not from a brochure" },
-  { title: "AI that does the boring work", desc: "Reading documents, watching deadlines and calculating costs, so your team can run the fleet" },
-  { title: "Local rules built in", desc: "Driving-time rules, tachographs and the realities of cross-border transport in the Balkans and the EU" },
-  { title: "Products first, custom when needed", desc: "Start with a ready product, and we build to measure only where you really need it" },
+  { title: "We run a business too", desc: "Our own systems run a real company every day, so we build for how work actually gets done" },
+  { title: "Fast, with AI in our workflow", desc: "Modern AI tools let us deliver in weeks what usually takes months" },
+  { title: "One team, start to finish", desc: "Planning, design, development, hosting and support from the same people" },
+  { title: "Clear scope, fixed quote", desc: "A written plan and a fixed price before we start, then a simple monthly plan for support" },
 ];
 
 const WhyRevoraSection = () => {
@@ -15,11 +15,11 @@ const WhyRevoraSection = () => {
       <div ref={ref} className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-start">
         <div>
           <h2 className="text-3xl md:text-5xl font-heading font-bold tracking-[-0.01em] text-white mb-6">
-            Built by transport people, <span className="gradient-text">for transport.</span>
+            Built by people who run a business, <span className="gradient-text">for businesses.</span>
           </h2>
           <p className="text-white/70 leading-relaxed text-lg">
-            Most software for transport is built far from the road. Revora was born inside the industry, so every
-            tool we make starts with a problem a real operator, dispatcher or driver deals with every day.
+            Revora started by building the software that runs our own transport company. Now we build the same
+            way for others: start from the real problem, ship something that works, and keep improving it.
           </p>
         </div>
 

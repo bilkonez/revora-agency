@@ -1,15 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import { Wrench } from "lucide-react";
 import { FlotivaMark, CoachboardMark, NexaMark } from "@/components/ProductLogos";
-
-const TmsMark = ({ size = 40 }: { size?: number }) => (
-  <span
-    className="inline-flex items-center justify-center rounded-[10px] bg-secondary text-foreground"
-    style={{ width: size, height: size }}
-  >
-    <Wrench className="w-5 h-5" strokeWidth={1.75} />
-  </span>
-);
 
 const products = [
   {
@@ -40,15 +30,6 @@ const products = [
     points: ["Compare couriers in one order", "One pickup request for any courier", "New customers for courier companies"],
     featured: false,
   },
-  {
-    logo: TmsMark,
-    name: "Custom TMS",
-    tagline: "Built to measure",
-    description:
-      "For larger operators we build their own transport management system: dispatch, maintenance, finance, contracts and tours, shaped around how they actually work.",
-    points: ["Dispatch and live map", "Quotes, invoices and contracts", "Maintenance and fleet records"],
-    featured: false,
-  },
 ];
 
 const ProductsSection = () => {
@@ -59,14 +40,13 @@ const ProductsSection = () => {
       <div ref={ref} className="max-w-7xl mx-auto">
         <p className="section-label mb-4">OUR PRODUCTS</p>
         <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-[-0.02em] text-foreground mb-4">
-          Software for the people who keep things moving
+          Our own products
         </h2>
         <p className="text-muted-foreground max-w-2xl mb-12">
-          Every product starts from a real problem we have seen on the road, in the dispatch office or at the
-          depot.
+          Besides client work, we build and run our own software for transport. Same team, same standards.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {products.map((p) => {
             const Logo = p.logo;
             return (
