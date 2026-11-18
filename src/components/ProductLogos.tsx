@@ -4,12 +4,12 @@
 
 type MarkProps = { size?: number; className?: string };
 
-// Revora: a road in perspective with the centre line in signal amber.
+// Revora: code brackets with the slash in signal amber.
 export const RevoraMark = ({ size = 28, className }: MarkProps) => (
   <svg width={size} height={size} viewBox="0 0 32 32" className={className} aria-hidden="true">
-    <rect width="32" height="32" rx="8" fill="#141a26" />
-    <path d="M7 26L13.5 7M25 26L18.5 7" stroke="#f7f5f0" strokeWidth="2.6" strokeLinecap="round" />
-    <path d="M16 24.5v-3.6M16 17.6v-2.8M16 11.8v-2" stroke="#f5a524" strokeWidth="2.4" strokeLinecap="round" />
+    <rect x="0.5" y="0.5" width="31" height="31" rx="7.5" fill="#141a26" stroke="#ffffff" strokeOpacity="0.12" />
+    <path d="M11 10l-5 6 5 6M21 10l5 6-5 6" fill="none" stroke="#f7f5f0" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M18 8.5l-4 15" stroke="#f5a524" strokeWidth="2.8" strokeLinecap="round" />
   </svg>
 );
 
