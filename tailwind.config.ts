@@ -14,9 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['Barlow', 'sans-serif'],
-        condensed: ['"Barlow Condensed"', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        display: ['"Bricolage Grotesque Variable"', "system-ui", "sans-serif"],
+        sans: ['"Instrument Sans Variable"', "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

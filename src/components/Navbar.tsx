@@ -1,92 +1,71 @@
-import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import { RevoraLogo } from "@/components/ProductLogos";
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
+import { RevoraMark } from "@/components/ProductLogos";
 
-const navLinks = [
-  { label: "SERVICES", href: "#services" },
-  { label: "OUR WORK", href: "#work" },
-  { label: "ABOUT", href: "#about" },
-  { label: "HOW WE WORK", href: "#process" },
-  { label: "CONTACT", href: "#contact" },
+const links = [
+  { label: "Services", href: "#services" },
+  { label: "Work", href: "#work" },
+  { label: "Process", href: "#process" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll);
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleClick = (href: string) => {
-    setMobileOpen(false);
-    document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || mobileOpen ? "bg-background/95 backdrop-blur-xl border-b border-border/60 shadow-sm" : "bg-transparent"
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-colors ${
+        scrolled || open ? "bg-background/85 backdrop-blur-xl border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" aria-label="Revora">
-          <RevoraLogo light={!scrolled && !mobileOpen} />
+      <nav className="wrap flex h-[4.5rem] items-center justify-between" aria-label="Main">
+        <a href="#top" className="flex items-center gap-2.5" aria-label="Revora, back to top">
+          <RevoraMark size={30} />
+          <span className="font-display text-[1.375rem] font-extrabold tracking-[-0.03em]">Revora</span>
         </a>
 
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <button
-              key={link.href}
-              onClick={() => handleClick(link.href)}
-              className={`text-xs tracking-[0.15em] font-semibold transition-colors ${
-                scrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"
-              }`}
-            >
-              {link.label}
-            </button>
+        <div className="hidden md:flex items-center gap-9">
+          {links.map((l) => (
+            <a key={l.href} href={l.href} className="text-[0.95rem] font-medium text-foreground/70 hover:text-foreground transition-colors">
+              {l.label}
+            </a>
           ))}
-          <Button size="sm" className="bg-primary text-primary-foreground hover:brightness-105 font-semibold" onClick={() => handleClick("#contact")}>
-            Start a Project
-          </Button>
+          <a href="#contact" className="btn-primary h-10 px-5 text-sm">
+            Start a project
+          </a>
         </div>
 
-        {/* Mobile toggle */}
         <button
-          className={`md:hidden ${scrolled || mobileOpen ? "text-foreground" : "text-white"}`}
-          onClick={() => setMobileOpen(!mobileOpen)}
+          className="md:hidden -mr-2 p-2"
+          onClick={() => setOpen(!open)}
+          aria-expanded={open}
+          aria-label={open ? "Close menu" : "Open menu"}
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            {mobileOpen ? (
-              <path d="M18 6L6 18M6 6l12 12" />
-            ) : (
-              <path d="M3 12h18M3 6h18M3 18h18" />
-            )}
-          </svg>
+          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
-      </div>
+      </nav>
 
-      {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="md:hidden bg-background/98 backdrop-blur-xl border-b border-border/50 px-6 pb-6">
-          {navLinks.map((link) => (
-            <button
-              key={link.href}
-              onClick={() => handleClick(link.href)}
-              className="block w-full text-left py-3 text-sm tracking-[0.1em] font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {link.label}
-            </button>
+      {open && (
+        <div className="md:hidden wrap pb-6">
+          {links.map((l) => (
+            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block py-3 text-lg font-medium border-b border-border">
+              {l.label}
+            </a>
           ))}
-          <Button size="sm" className="mt-2 w-full bg-primary text-primary-foreground font-semibold" onClick={() => handleClick("#contact")}>
-            Start a Project
-          </Button>
+          <a href="#contact" onClick={() => setOpen(false)} className="btn-primary mt-5 w-full">
+            Start a project
+          </a>
         </div>
       )}
-    </nav>
+    </header>
   );
 };
 

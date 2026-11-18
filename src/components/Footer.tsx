@@ -1,24 +1,14 @@
-import { RevoraLogo } from "@/components/ProductLogos";
+import { RevoraMark } from "@/components/ProductLogos";
 
 const Footer = () => (
-  <footer className="bg-asphalt py-12 px-6">
-    <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-white/55">
-      <div className="text-center md:text-left">
-        <RevoraLogo light />
-        <p className="mt-2">Digital solutions, development, web domains and hosting.</p>
+  <footer className="bg-foreground text-white/60 border-t border-white/10">
+    <div className="wrap py-10 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between text-sm">
+      <div className="flex items-center gap-3">
+        <RevoraMark size={26} />
+        <span className="font-display text-lg font-extrabold text-white tracking-[-0.03em]">Revora</span>
+        <span className="hidden md:inline">Digital solutions, development, web domains and hosting</span>
       </div>
-      <div className="flex flex-wrap justify-center gap-6">
-        {([["Services", "services"], ["Our work", "work"], ["Contact", "contact"]] as const).map(([l, id]) => (
-          <a
-            key={l}
-            href={`#${id}`}
-            className="hover:text-white transition-colors text-xs tracking-[0.1em] uppercase"
-          >
-            {l}
-          </a>
-        ))}
-      </div>
-      <span className="text-center">&copy; {new Date().getFullYear()} Revora. All rights reserved.</span>
+      <span>&copy; {new Date().getFullYear()} Revora</span>
     </div>
   </footer>
 );
