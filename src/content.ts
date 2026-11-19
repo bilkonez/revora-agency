@@ -79,16 +79,20 @@ export const projects: Project[] = [
 
 export const services = [
   {
+    title: "AI agents",
+    body: "AI assistants that answer your customers, read documents and emails, and handle tasks inside your own systems, day and night, and hand over to your staff when unsure.",
+  },
+  {
+    title: "AI automation",
+    body: "AI that takes over repetitive work: reading invoices, receipts and bank statements, planning schedules, drafting documents and keeping data in sync.",
+  },
+  {
     title: "Software development",
-    body: "Web apps and business systems built around how your team works: orders, scheduling, quotes and invoices, stock, records and dashboards.",
+    body: "Web apps and business systems built around how your team works, with AI built in where it saves time: orders, scheduling, quotes and invoices, stock and dashboards.",
   },
   {
     title: "Websites",
     body: "Fast, modern websites for companies, clubs and organisations, with content that updates itself where it can, such as results, offers or timetables.",
-  },
-  {
-    title: "AI and automation",
-    body: "AI that takes over repetitive work: reading invoices, receipts and bank statements, sorting email, drafting documents and keeping data in sync.",
   },
   {
     title: "Online shops",
@@ -113,8 +117,16 @@ export const steps = [
 
 export const faqs = [
   {
+    q: "What can AI actually do for my business?",
+    a: "Mostly the repetitive work: answering common customer questions, reading invoices and statements, filling in documents, planning schedules and preparing reports. We start with the task that costs you the most time and show you the result on your own data.",
+  },
+  {
+    q: "Is our data safe with AI?",
+    a: "Your data stays in your own systems and is used only for your tasks. The AI works with the access you give it, and anything important can wait for a person to approve it.",
+  },
+  {
     q: "What kind of projects do you take on?",
-    a: "Software development, web apps, websites, online shops, integrations, AI automation, web domains and hosting, for companies in any industry. If you are not sure something can be built, ask us.",
+    a: "AI agents and automation, software development, web apps, websites, online shops, integrations, web domains and hosting, for companies in any industry. If you are not sure something can be built, ask us.",
   },
   {
     q: "How much does a project cost?",

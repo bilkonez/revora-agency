@@ -7,8 +7,8 @@ export const Services = () => (
       <div className="lg:sticky lg:top-28 lg:self-start">
         <h2 className="h2">What we do</h2>
         <p className="lede mt-5">
-          Digital solutions from one team: from a single website to the system that runs your company, plus the domain
-          and hosting it lives on.
+          AI and digital solutions from one team: from an AI assistant or a website to the system that runs your company,
+          plus the domain and hosting it lives on.
         </p>
       </div>
       <ul className="border-t border-foreground">
@@ -96,8 +96,8 @@ export const About = () => (
   <section id="about" className="py-24 sm:py-32">
     <div className="wrap grid gap-14 lg:grid-cols-12">
       <p className="lg:col-span-8 font-display text-[1.9rem] sm:text-[2.6rem] font-bold leading-[1.15] tracking-[-0.025em]">
-        Revora started inside a bus company in Bosnia and Herzegovina. We built the system that now runs its office every
-        day, and found out we like solving other people&rsquo;s problems the same way.
+        Revora started inside a bus company in Bosnia and Herzegovina. We built the system, with AI inside, that now runs
+        its office every day. Now we do the same for other businesses.
       </p>
       <dl className="lg:col-span-4 lg:pl-8 space-y-6 self-end">
         <Fact label="Based in" value="Bosnia and Herzegovina" />
